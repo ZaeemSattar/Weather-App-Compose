@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
@@ -50,13 +51,19 @@ fun SplashScreen(navController: NavHostController) {
 
     Box(
         modifier = Modifier
-            .fillMaxSize()
-            .background(color = Color.White),
+            .fillMaxSize().background(color = Color.Black),
         contentAlignment = Alignment.Center
     ) {
 
         Image(
-            painter = painterResource(id = R.drawable.cloudy),
+            painter = painterResource(id = R.drawable.ic_splash),
+            contentDescription = "splash_bg",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+
+        Image(
+            painter = painterResource(id = R.drawable.ic_weather_icon),
             contentDescription = "splash icon",
             modifier = Modifier.scale(scale = scale.value)
         )
