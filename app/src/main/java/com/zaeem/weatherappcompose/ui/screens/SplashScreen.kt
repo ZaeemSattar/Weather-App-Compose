@@ -51,7 +51,8 @@ fun SplashScreen(navController: NavHostController) {
 
     Box(
         modifier = Modifier
-            .fillMaxSize().background(color = Color.Black),
+            .fillMaxSize()
+            .background(color = Color.Black),
         contentAlignment = Alignment.Center
     ) {
 
@@ -75,7 +76,7 @@ fun SplashScreen(navController: NavHostController) {
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() {
+fun SplashScreenPreview() {
     WeatherAppComposeTheme {
         SplashScreen(navController = rememberNavController())
     }
