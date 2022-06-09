@@ -20,3 +20,33 @@ val TitleStyle = TextStyle(
     fontSize = 16.sp,
     color = Purple700
 )
+
+
+val TemperatureStyle = TextStyle(
+    fontFamily = OpenSansFamily,
+    fontWeight = FontWeight.Bold,
+    fontSize = 100.sp,
+    color = White
+)
+
+val TemperatureStatusType = TextStyle(
+    fontFamily = OpenSansFamily,
+    fontWeight = FontWeight.Normal,
+    fontSize = 24.sp,
+    color = White
+)
+
+val HumidityStyle = TextStyle(
+    fontFamily = OpenSansFamily,
+    fontWeight = FontWeight.Bold,
+    fontSize = 19.sp,
+    color = White
+)
+
+
+val TemperatureStyleMedium = TextStyle(
+    fontFamily = OpenSansFamily,
+    fontWeight = FontWeight.Bold,
+    fontSize = 27.sp,
+    color = White
+)

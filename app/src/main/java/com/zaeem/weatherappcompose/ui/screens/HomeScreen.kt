@@ -30,7 +30,7 @@ fun HomeScreen(navController: NavHostController) {
             ).show()
         })
         Spacer(modifier = Modifier.padding(12.dp))
-        WeatherFullCard()
+        WeatherFullCard("25", "Clouds & Sun", "35")
     }
 
 
